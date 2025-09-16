@@ -1,0 +1,9 @@
+
+body{font-family:system-ui,Arial,sans-serif;max-width:800px;margin:20px auto;padding:0 12px}
+#log{border:1px solid #ccc;border-radius:8px;padding:8px;height:50vh;overflow:auto;background:#fafafa}
+.msg{margin:.35rem 0;padding:.35rem .5rem;border-radius:6px;background:#fff;border:1px solid #eee}
+.meta{font-size:.8rem;color:#666}
+.server{color:#0b63c9;font-style:italic;margin:.35rem 0}
+form{display:flex;gap:8px;margin-top:10px}
+input,button{font-size:1rem;padding:.6rem .7rem}
+#join{display:flex;gap:8px;margin-bottom:12px}
