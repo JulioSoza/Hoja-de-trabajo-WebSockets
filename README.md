@@ -24,7 +24,7 @@ Cómo funciona la comunicación con sockets
   - `chat:message` → `{ id, user, msg, ts }`
   - `server:notification` → `string`
 
-> Nota: el historial está en memoria del proceso. Si se reinicia el servidor, se limpia.
+El historial está en memoria del proceso. Si se reinicia el servidor, se limpia.
 
 ## Estructura del proyecto
 websocket-chat/
@@ -40,3 +40,20 @@ Qué aprendí
 WebSockets permiten comunicación bidireccional persistente. Con Socket.IO no es necesario “preguntar” por cambios: el servidor emite eventos cuando ocurren. Manejar un buffer de mensajes (con límite) es útil para onboarding de nuevos usuarios.
 
 Detalles prácticos: sanitizar texto antes de inyectarlo en el DOM, limitar longitud de mensajes, y distinguir emisiones a uno (socket.emit), a todos (io.emit) y a “todos menos yo” (socket.broadcast.emit).
+
+## Evidencias
+
+### Conexión de dos clientes
+<img width="921" height="248" alt="image" src="https://github.com/user-attachments/assets/7ec2d079-6b9a-4a20-86cc-8acc121df2bc" />
+
+### Mensajes en tiempo real
+<img width="921" height="624" alt="image" src="https://github.com/user-attachments/assets/78b27133-18e9-48d8-9e57-82f084ce970f" />
+
+### Desconexión
+<img width="921" height="247" alt="image" src="https://github.com/user-attachments/assets/eb3cba99-97af-426d-b394-0a3040b72ee6" />
+
+### Historial (últimos 10)
+<img width="921" height="543" alt="image" src="https://github.com/user-attachments/assets/d0d4df86-fcbd-49f3-a64c-0535b1eaa72d" />
+
+
+
